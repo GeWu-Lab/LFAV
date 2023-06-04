@@ -93,10 +93,10 @@ layout: default
       <div class="col-md-12">
         <!-- <ul> -->
           <p class="text-muted">
-            <b>For instance</b>, as shown in this Figure, when answering the audio-visual question “<b>Which clarinet makes the sound first</b>” for this instrumental ensemble, it requires to locate sounding objects “<b>clarinet</b>” in the audio-visual scenario and focus on the “<b>first</b>” sounding “<b>clarinet</b>” in the timeline. To answer the question correctly, both effective audio-visual scene understanding and spatio-temporal reasoning are essentially desired.
+            An example of long form audio-visual videos, with a length of 121-second. This video shows a badminton game. The audio modality contains three events: <b>cheering</b>, <b>clapping</b> and <b>speech</b>, the visual modality contains five events: <b>playing badminton</b>, <b>cheering</b>, <b>crying</b>, <b>laughing</b>, and <b>clapping</b>. The event <b>cheering</b> and <b>clapping</b> appears both in audio modality and visual modality. These multisensory events jointly facilitate the understanding of this video.
           </p>
           <p class="text-muted">
-            Audio-visual question answering requires auditory and visual modalities for multimodal scene understanding and spatiotemporal reasoning. For example, when we encounter a complex musical performance scene involving multiple sounding and nonsounding instruments above, it is difficult to analyze the sound first term in the question by VQA model that only considers visual modality. While if we only consider the AQA model with mono sound, the left or right position is also hard to be recognized. However, we can see that using both auditory and visual modalities can answer this question effortlessly.
+            This video is 121-second long, consisting of various audio events and visual events, they either only occur in one modality or occur in both modalities but have different temporal boundaries. These modality-aware events as well as their inherent relations help to effectively infer what happens in the video then achieve a better understanding of the video content. Considering the merits of the above two characteristics, we propose to study video understanding in terms of long form and audio-visual aspect, name as \emph{long form audio-visual video understanding}. .
           </p>
         <!-- </ul> -->
       </div>
