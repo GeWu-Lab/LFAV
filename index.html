@@ -160,7 +160,7 @@ layout: default
       <div class="col-lg-12">
         <video autoplay muted loop width="100%">
           <!-- <source src="{{ site.baseurl }}/static/videos/03x03_videoWall.webm" type="video/webm"> -->
-            <source src="{{ site.baseurl }}/static/videos/lfav.mp4" type="video/mp4">
+            <source src="{{ site.baseurl }}/static/videos/lfav_480.mp4" type="video/mp4">
               <!-- <source src="{{ site.baseurl }}/static/videos/lfav.mp4" type="video/mp4">
                 Sorry, we cannot display the LFAV video wall as your browser doesn't support HTML5 video.
         </video> -->
@@ -268,23 +268,26 @@ layout: default
         <!-- example 1 -->
         <table>
           <tr>
-            <td style="width:1%"></td>
-            <td style="width:31%">
+
+            <td style="width:2%"></td>
+            <td style="width:48%">
               <video width="100%" controls="controls">
                 <source src="{{ site.baseurl }}/static/videos/demo1.mp4" align="left" type="video/mp4">
               </video>
             </td>
-            <td style="width:1%"></td>
-            <td style="width: 67%; text-align:left; padding:0.2rem" class="text-muted">
-              <b>Question</b>: How many instruments are sounding in the video? <br>
-              <b>Answer</b>: two <br>
-              To answer the question, an AVQA model needs to first identify objects and sound sources in the video, and then count all sounding objects. Although there are three different sound sources in the audio modality, only two of them are visible. Rather than simply counting all audio and visual instances, exploiting audio-visual association is important for AVQA.
+
+            <td style="width:2%"></td>
+            <td style="width: 48%">
+              <video width="100%" controls="controls">
+                <source src="{{ site.baseurl }}/static/videos/demo2.mp4" align="right" type="video/mp4">
+              </video>
             </td>
+            
           </tr>
         </table>
 
         <!-- example 2 -->
-        <table>
+        <!-- <table>
           <tr>
             <td style="width:1%"></td>
             <td style="width:31%">
@@ -300,7 +303,7 @@ layout: default
 
             </td>
           </tr>
-        </table>
+        </table> -->
 
         <!-- example 3 -->
         <!-- <table>
