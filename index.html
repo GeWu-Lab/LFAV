@@ -185,7 +185,7 @@ layout: default
         <ul class="text-muted">
           <li class="text-muted">5,175 videos</li>
           <li class="text-muted">average length of <b>210 seconds</b> and total length of <b>302 hours</b></li>
-          <li class="text-muted">average event categories of <b>3.15</b>.</li>
+          <li class="text-muted">average event categories of <b>3.15</b> per video.</li>
           <li class="text-muted"><b>Modality-aware annotations</b> for all videos</li>
           <li class="text-muted">Diversity, complexity and dynamic</li>
         </ul>
@@ -224,7 +224,7 @@ layout: default
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading text-uppercase">LFAV Dataset</h2>
-        <h3 class="section-subheading text-muted">Some graphical representations of our dataset and annotations</h3>
+        <h3 class="section-subheading text-muted">Illustrations of our LFAV dataset statistics</h3>
       </div>
     </div>
 
@@ -235,7 +235,15 @@ layout: default
       <div class="col-md centered" style="padding:1rem;">
         <img src="{{ site.baseurl }}/static/img/stats-figures/stat1.png" style="width: 100%" class="img-responsive"/> 
       </div>
-      <p class="text-muted" style="text-align:left"><b>Illustrations of our LFAV dataset statistics</b>. <b>(a-d)</b> statistical analysis of the videos and QA pairs. <b>(e)</b> Question formulas. <b>(f)</b> Distribution of question templates, where the dark color indicates the number of QA pairs generated from real videos while the light-colored area on the upper part of each bar means that from synthetic videos. <b>(g)</b> Distribution of first n-grams in questions. Our QA-pairs need <b>fine-grained scene understanding</b> and <b>spatio-temporal reasoning</b> over audio and visual modalities to be solved. For example, existential and location questions require spatial reasoning, and temporal questions require temporal reasoning. Best viewed in color.</p>
+      <p class="text-muted" style="text-align:left"><b>Illustrations of our LFAV dataset statistics</b>. 
+        <b>(a-d)</b> Statistical analysis of label categories, including the distribution of event numbers in each video; 
+        the distribution of video length; 
+        the proportion of the top 4 event categories, 
+        the top 4 labels represent <i>speech, clapping, cheering,</i> and <i>laughing</i>, which are the most common human actions; 
+        the temporal proportion of events that occur on two modalities at the same time.
+        <b>(e)</b> Second-order interactions between all labels, the thicker the line, the closer the association. 
+        <b>(f)</b> Distribution of dataset labels black of each category.
+        <!-- <b>(a-d)</b> statistical analysis of the videos and QA pairs. <b>(e)</b> Question formulas. <b>(f)</b> Distribution of question templates, where the dark color indicates the number of QA pairs generated from real videos while the light-colored area on the upper part of each bar means that from synthetic videos. <b>(g)</b> Distribution of first n-grams in questions. Our QA-pairs need <b>fine-grained scene understanding</b> and <b>spatio-temporal reasoning</b> over audio and visual modalities to be solved. For example, existential and location questions require spatial reasoning, and temporal questions require temporal reasoning. Best viewed in color.</p> -->
     </div>
 
 
@@ -252,7 +260,15 @@ layout: default
         <img src="{{ site.baseurl }}/static/img/stats-figures/comp_others.png" style="width: 100%" class="img-responsive"/> 
       </div>
       <p class="text-muted" style="text-align:left">
-        <b>Comparison with other video QA datasets</b>. Our LFAV dataset focuses on the interaction between visual objects and their produced sounds, offering QA pairs that covering audio questions, visual questions and audio-visual questions, which is more comprehensive than other datasets. The collected videos in LFAV can facilitate <b>audio-visual understanding in terms of spatial and temporal associations</b>.
+        <b>Comparison with other datasets</b>. 
+        Our LFAV dataset is collected for the proposed multisensory temporal event localization task, 
+        where diversified domains are covered. 
+        Specifically, the LFAV dataset offers modality-aware annotations for each video, 
+        that is it points out the events are from audio, visual, or both modalities.
+        Meanwhile, multiple events with different semantic categories per video 
+        are also annotated for better exploring the relation among events. 
+        Videos in the dataset have an average length of 210 seconds and a total length of 302 hours.
+        * means LLP only provides modality-aware annotations in validation and testing sets.
       </p>
     </div>
 
