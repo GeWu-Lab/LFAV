@@ -268,7 +268,7 @@ layout: default
         Meanwhile, multiple events with different semantic categories per video 
         are also annotated for better exploring the relation among events. 
         Videos in the dataset have an average length of 210 seconds and a total length of 302 hours.
-        * means LLP only provides modality-aware annotations in validation and testing sets.
+        (* means LLP only provides modality-aware annotations in validation and testing sets.)
       </p>
     </div>
 
@@ -320,8 +320,7 @@ layout: default
       </div>
       <hr/>
       <p class="text-muted" style="text-align:left">
-        Some video examples with QA pairs in the LFAV dataset. 
-        Through these examples, we can have a better understanding of the dataset, and can more intuitively feel the QA tasks in dynamic and complex audio-visual scenes
+        Some video examples in the LFAV dataset. Each of them contains multiple modality aware events. 
       </p>
       <p class="text-muted" style="text-align:left; margin-right: 10px;">
  
@@ -620,16 +619,21 @@ layout: default
     
     <div class="row">
       <div class="col-md-12 text-center">
-        <h2 class="section-heading text-uppercase">A Simple Baseline for LFAV</h2>
+        <h2 class="section-heading text-uppercase">An event-centric framework</h2>
         <!-- <h3 class="section-subheading text-muted">Challenge Details with links to &#9733;NEW&#9733; Codalab Leaderboards</h3> -->
-        <h3 class="section-subheading text-muted">Audio-visual spatial-temporal LFAV method, experimental results and simple analysis</h3>
+        <h3 class="section-subheading text-muted">method, experimental results and simple analysis</h3>
       </div>
     </div>
      
     <div class="row">
       <div class="col-md-12">
         <p class="text-muted" style="text-align:left">
-          To solve the AVQA problem, we propose a spatio-temporal grounding model to achieve scene understanding and reasoning over audio and visual modalities. And to benchmark different models, we use answer prediction accuracy as the evaluation metric and evaluate performance of different models on answering different types of audio, visual, and audio-visual questions. <b>More details in the <a href="{{ site.baseurl }}/static/files/LFAV.pdf">[Paper]</a> and <a href="{{ site.baseurl }}/static/files/LFAV-supp.pdf">[Supplementary]</a></b>.<br/>  
+          we propose an event-centric framework containing three phases from snippet prediction, event extraction to event interaction. 
+          Firstly, we propose a pyramid multimodal transformer model to learn snippet-level features by executing intra-modal and cross-modal interaction within multiscale temporal windows.
+          Secondly, we extract event-level features by refining and aggregating event-aware snippet features in structured graphs.
+          At last, we study event relations by modeling the influence among multiple audio and visual events, then refining the event features.
+          The three phases are jointly optimized with video-level event labels in an end-to-end fashion. 
+          <b>More details are in the <a href="{{ site.baseurl }}/static/files/LFAV.pdf">[Paper]</a> and <a href="{{ site.baseurl }}/static/files/LFAV-supp.pdf">[Supplementary]</a></b>.<br/>  
         </p> 
       </div>
     </div>
@@ -637,13 +641,13 @@ layout: default
 
     <div class="row">
       <div class="col-md-12">
-        <h4 class="subheading">Spatio-temporal Grounding Model</h4>
+        <!-- <h4 class="subheading">Spatio-temporal Grounding Model</h4>
         <p class="text-muted" style="text-align:left">An overview of the proposed framework is illustrated in below figure. We consider that the sound and the location of its visual source usually reflects the spatial association between audio and visual modality, the <b>spatial grounding module</b>, which performs attention-based sound source localization, is therefore introduced to decompose the complex scenarios into concrete audio-visual association. To highlight the key timestamps that are closely associated to the question, we propose a <b>temporal grounding module</b>, which is designed for attending critical temporal segments among the changing audio-visual scenes and capturing question-aware audio and visual embeddings.</p>
-        
+         -->
         <div class="col-md centered" style="padding:0.2rem; text-align:center; margin-bottom:8px">
         <img src="{{ site.baseurl }}/static/img/experiments/framework_pipeline_long.png" style="width: 100%;" class="img-responsive"/> 
         </div>
-        <p class="text-muted" style="text-align:left">The <b>proposed audio-visual question answering model</b> takes pre-trained CNNs to extract audio and visual features and uses a LSTM to obtain a question embedding. We associate specific visual locations with the input sounds to perform spatial grounding, based on which audio and visual features of key timestamps are further highlighted via question query for temporal grounding. Finally, multimodal fusion is exploited to integrate audio, visual, and question information for predicting the answer to the input question. </p>
+        <!-- <p class="text-muted" style="text-align:left">The <b>proposed audio-visual question answering model</b> takes pre-trained CNNs to extract audio and visual features and uses a LSTM to obtain a question embedding. We associate specific visual locations with the input sounds to perform spatial grounding, based on which audio and visual features of key timestamps are further highlighted via question query for temporal grounding. Finally, multimodal fusion is exploited to integrate audio, visual, and question information for predicting the answer to the input question. </p> -->
       </div>
     </div>
 
