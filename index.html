@@ -113,7 +113,7 @@ layout: default
             These modality-aware events as well as their inherent relations help to effectively infer 
             what happens in the video then achieve a better understanding of the video content. 
             Considering the merits of the above two characteristics, we propose to study video understanding in terms of long form and audio-visual aspect, 
-            name as \emph{long form audio-visual video understanding}. 
+            name as \emph{long form audio-visual video understanding. 
           </p>
           <!-- <p class="text-muted">
             This video is 121-second long, consisting of various audio events and visual events, they either only occur in one modality or occur in both modalities but have different temporal boundaries. These modality-aware events as well as their inherent relations help to effectively infer what happens in the video then achieve a better understanding of the video content. Considering the merits of the above two characteristics, we propose to study video understanding in terms of long form and audio-visual aspect, name as \emph{long form audio-visual video understanding}. .
@@ -155,11 +155,12 @@ layout: default
         <!-- <h5 class="text-muted" style="text-align:left;"> -->
           <!-- <ul> -->
             <p class="text-muted">
-              To explore scene understanding and spatio-temporal reasoning over audio and visual modalities, we build a largescale audio-visual dataset, LFAV, which focuses on question-answering task. As noted above, high-quality datasets are of considerable value for AVQA research.
+              To study the proposed multisensory temporal event localization task, 
+              we elaborately build a large-scale Long Form Audio-visual Video (LFAV) dataset with 5,175 videos, 
+              as existing datasets are not appropriate for our proposed task. 
+              Information and highlights of the LFAV dataset are shown below.
             </p>
-            <p class="text-muted">
-              <b>Why musical performance? </b>Considering that musical performance is a typical multimodal scene consisting of abundant audio and visual components as well as their interaction, it is appropriate to be utilized for the exploration of effective audio-visual scene understanding and reasoning.
-            </p>
+
 
           <!-- </ul> -->
         </h5>
@@ -172,21 +173,20 @@ layout: default
       <!-- news column -->
       <div class="col-md-4">
         <h4 class="service-heading">Basic informations</h4>
-        <p class="text-muted">We choose to manually collect amounts of musical performance videos from YouTube. Specifically, 22 kinds of instruments, such as guitar, cello, and xylophone, are selected and 9 audio-visual question types are accordingly designed, which cover three different scenarios, i.e., audio, visual and audio-visual. Annotations are collected using a novel by our GSAI-Labeled system.</p>
+        <p class="text-muted">We collect videos from YouTube, covering five kinds of daily life to ensure
+           the diversity, complexity, and dynamic of the real world: 
+           human-related, sports, musical instruments, tools, and animals. 
+           We also construct a label set of 35 kinds of events covering the above scenes, </p>
 
       </div>
       <!-- characteristics column -->
       <div class="col-md-4">
         <h4 class="service-heading">Characteristics</h4>
         <ul class="text-muted">
-          <li class="text-muted">3 typical multimodal scene</li>
-          <li class="text-muted">22 kinds of instruments</li>
-          <li class="text-muted">4 categories: String, Wind, Percussion and Keyboard.</li>
-          <li class="text-muted"><b>9,290</b> videos for over <b>150</b> hours</li>
-          <li class="text-muted">7,423 real videos</li>
-          <li class="text-muted">1,867 synthetic videos</li>
-          <li class="text-muted">9 audio-visual question types</li>
-          <li class="text-muted"><b>45,867</b> question-answer pairs</li>
+          <li class="text-muted">5,175 videos</li>
+          <li class="text-muted">average length of <b>210 seconds</b> and total length of <b>302 hours</b></li>
+          <li class="text-muted">average event categories of <b>3.15</b>.</li>
+          <li class="text-muted"><b>Modality-aware annotations</b> for all videos</li>
           <li class="text-muted">Diversity, complexity and dynamic</li>
         </ul>
       </div>
