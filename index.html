@@ -658,18 +658,30 @@ layout: default
       <div class="col-md-12">
         <h4 class="subheading">Experiments</h4>
         <p class="text-muted" style="text-align:left">
-          To study different input modalities and validate the effectiveness of the proposed model, we conduct extensive ablations of our model and compare to recent QA approaches. 
-        </p>
-        <p class="text-muted" style="text-align:left; margin-right: 10px;">
-          <img src="{{ site.baseurl }}/static/img/experiments/exp2.png" align="right" width="40%" class="img-responsive"/> As shown in <b>right table</b>, we observe that leveraging audio, visual, and question information can boost AVQA task.
-          The <b>below table</b> shows that audio-visual video questiFon answering results of different methods on the test set of LFAV. And the top-2 results are highlighted.
+          To validate the superiority of our proposed framework, we choose 13 related methods for comparison, 
+          including weakly supervised temporal action localization methods: STPN, RSKP; 
+          long sequence modeling methods: Longformer, Transformer-LS, ActionFormer; 
+          audio-visual learning methods: AVE, AVSlowFast, HAN, PSP, DHHN; 
+          video classification methods: SlowFast, MViT, and MeMViT. 
         </p>
 
         <div class="col-md centered" style="padding:0.6rem; text-align:center">
         <img src="{{ site.baseurl }}/static/img/experiments/exp1.png" style="width: 100%;" class="img-responsive"/> 
         </div>
         <p class="text-muted" style="text-align:left">
-          The results <b>firstly</b> demonstrate that all AVQA methods outperform A-, V- and VideoQA methods, which indicates that AVQA task can be boosted through multisensory perception. <b>Secondly</b>, our method achieves considerable improvement on most audio and visual questions. For the audio-visual question that desires spatial and temporal reasoning, our method is clearly superior over other methods on most question types, especially on answering the <i>Counting</i> and <i>Location</i> questions. <b>Moreover</b>, the results confirm the potential of our dataset as a testbed for audio-visual scene understanding.
+          <b>Comparison to Other Methods.</b> Firstly, temporal action localization and long sequence modeling methods
+          aim to effectively localize action events in untrimmed videos or model long sequences.
+          But they ignore the valuable cooperation among audio and video modality, which is important in achieving more comprehensive video event understanding. 
+          Secondly, although some methods take the audio signal into account, they are consistently worse than our method. 
+          This could be because they mainly aim at understanding trimmed short videos, resulting in limited modeling of long-range dependencies and event interactions.
+          Thirdly, our proposed method outperforms all the comparison ones obviously, although some recent video classification methods
+           achieve slightly better results on visual mAP, their overall performance still lags obviously behind our proposed method, 
+           showing that our proposed event-centric framework can localize both audio and visual events in long form audio-visual videos better. 
+        </p>
+
+        <p class="text-muted" style="text-align:left; margin-right: 10px;">
+          <img src="{{ site.baseurl }}/static/img/experiments/exp2.png" align="right" width="40%" class="img-responsive"/> As shown in <b>right table</b>, we observe that leveraging audio, visual, and question information can boost AVQA task.
+          The <b>below table</b> shows that audio-visual video questiFon answering results of different methods on the test set of LFAV. And the top-2 results are highlighted.
         </p>
       </div>
     </div>
@@ -679,7 +691,7 @@ layout: default
 
     <div class="row">
       <div class="col-md-12">
-        <h4 class="subheading">Visualized spatio-temporal grounding results</h4>
+        <h4 class="subheading">Visualized localization results</h4>
         <p class="text-muted" style="text-align:left">We provide several visualized spatial grounding results. The heatmap indicates the location of sounding source. Through the spatial grounding results, the sounding objects are visually captured, which can facilitate the spatial reasoning.</p>
         <div class="col-md centered" style="padding:0.2rem; text-align:center; margin-bottom:8px">
         <img src="{{ site.baseurl }}/static/img/experiments/visualize1.png" style="width: 100%;" class="img-responsive"/> 
