@@ -83,8 +83,8 @@ layout: default
           <p  class="text-muted">
             We live in a world filled with never-ending streams of multimodal information.
             Videos captured from natural scenes have two typical characteristics: 
-            1) Long form. They usually span several minutes, covering multiple related events in different categories. These events usually jointly contribute to depicting the main content of the video.
-            2) Audio-visual. Videos recorded in real-world scenarios usually comprise both audio and visual modalities. These two aspects often exhibit asynchrony, providing unique perspectives in delineating the video content, yet collaboratively facilitating video understanding.
+            <b>1)</b> Long form. They usually span several minutes, covering multiple related events in different categories. These events usually jointly contribute to depicting the main content of the video.
+            <b>2)</b> Audio-visual. Videos recorded in real-world scenarios usually comprise both audio and visual modalities. These two aspects often exhibit asynchrony, providing unique perspectives in delineating the video content, yet collaboratively facilitating video understanding.
             <!--As a more natural recording of the real scenario, 
               long form audio-visual videos are expected as an important bridge for better exploring and understanding the world. 
               In this paper, we propose the multisensory temporal event localization task in long form videos and aim to address the accompanying challenges. 
@@ -105,16 +105,49 @@ layout: default
       <div class="col-md-12">
         <!-- <ul> -->
           <p class="text-muted">
-            We show an example of long form audio-visual videos, with a length of 121-second. This video shows a badminton game. The audio modality contains three events: <b>cheering</b>, <b>clapping</b> and <b>speech</b>, the visual modality contains five events: <b>playing badminton</b>, <b>cheering</b>, <b>crying</b>, <b>laughing</b>, and <b>clapping</b>. The event <b>cheering</b> and <b>clapping</b> appears both in audio modality and visual modality. These multisensory events jointly facilitate the understanding of this video.
+            We show an example of long form audio-visual videos, with a length of 121-second. 
+            This video shows a badminton game. The audio modality contains three events: 
+            <b>cheering</b>, <b>clapping</b> and <b>speech</b>, the visual modality contains five events: 
+            <b>playing badminton</b>, <b>cheering</b>, <b>crying</b>, <b>laughing</b>, and <b>clapping</b>. 
+            The event <b>cheering</b> and <b>clapping</b> appears both in audio modality and visual modality. 
+            These modality-aware events as well as their inherent relations help to effectively infer 
+            what happens in the video then achieve a better understanding of the video content. 
+            Considering the merits of the above two characteristics, we propose to study video understanding in terms of long form and audio-visual aspect, 
+            name as \emph{long form audio-visual video understanding}. 
           </p>
-          <p class="text-muted">
+          <!-- <p class="text-muted">
             This video is 121-second long, consisting of various audio events and visual events, they either only occur in one modality or occur in both modalities but have different temporal boundaries. These modality-aware events as well as their inherent relations help to effectively infer what happens in the video then achieve a better understanding of the video content. Considering the merits of the above two characteristics, we propose to study video understanding in terms of long form and audio-visual aspect, name as \emph{long form audio-visual video understanding}. .
-          </p>
+          </p> -->
         <!-- </ul> -->
       </div>
     </div>
 
     <br/>
+
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="section-heading text-uppercase">What is the multisensory temporal event localization task?</h3>
+        <!-- <h5 class="text-muted" style="text-align:left;"> -->
+          <!-- <ul> -->
+            <p class="text-muted">
+              <!-- To explore scene understanding and spatio-temporal reasoning over audio and visual modalities, we build a largescale audio-visual dataset, LFAV, which focuses on question-answering task. As noted above, high-quality datasets are of considerable value for AVQA research. -->
+              <b>Task Definition.</b> To achieve a better understanding of long form audio-visual videos, we propose to focus on the multisensory temporal event localization task, 
+              which essentially requires the model to predict the start and end time of each audio and visual event in the video. 
+              Concretely, we divide the video into several non-overlapping snippets, then predict the event categories of all snippets.
+              <!-- However, there remain several challenges when addressing this task. -->
+            </p>
+            <p class="text-muted">
+              <!-- To explore scene understanding and spatio-temporal reasoning over audio and visual modalities, we build a largescale audio-visual dataset, LFAV, which focuses on question-answering task. As noted above, high-quality datasets are of considerable value for AVQA research. -->
+              <b>Challenges.</b> Firstly, the video contains multiple events with diverse categories, modalities, and varying lengths. 
+              Secondly, understanding the video content requires effectively modeling long-range dependencies and relations across different clips and modalities.
+              <!-- However, there remain several challenges when addressing this task. -->
+            </p>
+
+          <!-- </ul> -->
+        </h5>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col-lg-12">
@@ -171,10 +204,10 @@ layout: default
       <div class="col-lg-12">
         <video autoplay muted loop width="100%">
           <!-- <source src="{{ site.baseurl }}/static/videos/03x03_videoWall.webm" type="video/webm"> -->
-            <source src="{{ site.baseurl }}/static/videos/lfav.mp4" type="video/mp4">
-              <source src="{{ site.baseurl }}/static/videos/lfav.mp4" type="video/mp4">
+            <source src="{{ site.baseurl }}/static/videos/lfav_480.mp4" type="video/mp4">
+              <!-- <source src="{{ site.baseurl }}/static/videos/lfav.mp4" type="video/mp4">
                 Sorry, we cannot display the LFAV video wall as your browser doesn't support HTML5 video.
-        </video>
+        </video> -->
       </div>
     </div>
     <!-- video banner row -->
@@ -608,14 +641,7 @@ layout: default
           To study different input modalities and validate the effectiveness of the proposed model, we conduct extensive ablations of our model and compare to recent QA approaches. 
         </p>
         <p class="text-muted" style="text-align:left; margin-right: 10px;">
-          <img src="{{ site.baseurl }}/static/img/experiments/exp2.png" align="right" width="40%" class="img-responsive"/> 
-          As shown in <b>right table</b>, we observe that leveraging audio, visual, and question information can boost AVQA task.
-          The <b>below table</b> shows that audio-visual video questiFon answering results of different methods on the test set of LFAV. And the top-2 results are highlighted. 
-          shows that audio-visual video questiFon answering results of different methods on the test set of LFAV. And the top-2 results are highlighted. different methods on the test set of LFAV. And the top-2 results are highlighted.
-        </p>
-
-        <p class="text-muted" style="text-align:left; margin-right: 10px;">
-          <img src="{{ site.baseurl }}/static/img/experiments/exp3.png" align="right" width="40%" class="img-responsive"/> As shown in <b>right table</b>, we observe that leveraging audio, visual, and question information can boost AVQA task.
+          <img src="{{ site.baseurl }}/static/img/experiments/exp2.png" align="right" width="40%" class="img-responsive"/> As shown in <b>right table</b>, we observe that leveraging audio, visual, and question information can boost AVQA task.
           The <b>below table</b> shows that audio-visual video questiFon answering results of different methods on the test set of LFAV. And the top-2 results are highlighted.
         </p>
 
