@@ -669,18 +669,28 @@ layout: default
         <img src="{{ site.baseurl }}/static/img/experiments/exp1.png" style="width: 100%;" class="img-responsive"/> 
         </div>
         <p class="text-muted" style="text-align:left">
-          <b>Comparison to Other Methods.</b> Firstly, temporal action localization and long sequence modeling methods
+          <b>Comparison to Other Methods.</b> <b>Firstly</b>, temporal action localization and long sequence modeling methods
           aim to effectively localize action events in untrimmed videos or model long sequences.
           But they ignore the valuable cooperation among audio and video modality, which is important in achieving more comprehensive video event understanding. 
-          Secondly, although some methods take the audio signal into account, they are consistently worse than our method. 
+          <b>Secondly</b>, although some methods take the audio signal into account, they are consistently worse than our method. 
           This could be because they mainly aim at understanding trimmed short videos, resulting in limited modeling of long-range dependencies and event interactions.
-          Thirdly, our proposed method outperforms all the comparison ones obviously, although some recent video classification methods
+          <b>Thirdly</b>, our proposed method outperforms all the comparison ones obviously, although some recent video classification methods
            achieve slightly better results on visual mAP, their overall performance still lags obviously behind our proposed method, 
            showing that our proposed event-centric framework can localize both audio and visual events in long form audio-visual videos better. 
         </p>
+        <p class="text-muted" style="text-align:left">
+          <b>Effectiveness of Three Phases.</b> As mentioned above,
+           our full method consists of three progressive phases. 
+           The performance of the snippet prediction phase has already surpassed most comparison methods, 
+           then the subsequent phases can further improve localization performance. 
+           Results are shown in the last three rows of the above Table, 
+           which indicate the potential importance of decoupling a long form audio-visual video into multiple uni-modal events with different lengths and modeling their inherent relations in both uni-modal and cross-modal scenarios.
+        </p> 
+
 
         <p class="text-muted" style="text-align:left; margin-right: 10px;">
-          <img src="{{ site.baseurl }}/static/img/experiments/exp2.png" align="right" width="40%" class="img-responsive"/> As shown in <b>right table</b>, we observe that leveraging audio, visual, and question information can boost AVQA task.
+          <img src="{{ site.baseurl }}/static/img/experiments/exp2.png" align="left" width="45%" class="img-responsive"/> 
+          <img src="{{ site.baseurl }}/static/img/experiments/exp3.png" align="right" width="45%" class="img-responsive"/>As shown in <b>right table</b>, we observe that leveraging audio, visual, and question information can boost AVQA task.
           The <b>below table</b> shows that audio-visual video questiFon answering results of different methods on the test set of LFAV. And the top-2 results are highlighted.
         </p>
       </div>
