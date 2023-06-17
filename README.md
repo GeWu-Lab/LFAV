@@ -59,4 +59,4 @@ test_visual.csv: event-level visual annotaions of testing set
 
 ### License
 
-This project is released under the[CC BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/).
+This project is released under the [CC BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/).
