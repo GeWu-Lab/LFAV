@@ -1234,7 +1234,7 @@ layout: default
           
         <!-- <p>YouTube URL of raw videos: comming soon.</p> -->
         
-        <p>Extracted features:
+        <p><b>Extracted features:</b>
           <ul>
             <li>VGGish feature shape: [T, 128]&nbsp;&nbsp;, Download from&nbsp;
               <a href="https://drive.google.com/file/d/1bvTBotLHnPGIeIAkkgMWK7wcWjZ5xbfo/view?usp=drive_link">Google Drive</a> or&nbsp;
@@ -1248,15 +1248,37 @@ layout: default
             </ul>
         </p>
 
-        <p> Annotations (train, val and test set): Available for download at <a href="https://github.com/GeWu-Lab/LFAV/tree/main/LFAV_dataset">GitHub</a>.</p>
+        <p> <b>Annotations</b> (train, val and test set): Available for download at <a href="https://github.com/GeWu-Lab/LFAV/tree/main/LFAV_dataset">GitHub</a>.</p>
 
         <p>
-          <b>How to read the annotation files: </b>
+          We provide video-level annotations for the training set, provide both video-level and event-level annotations for validation and testing sets.The annotation files are stored in CSV format.
 
-          The annotation files are stored in CSV format. Each annotation file contains several different keyword, and we present a detailed explanation of them.
           <ul>
-            <li>Train set: filename, video-level labels</li>
-            <li>Val and Test set: filename, onset, offset, event-level labels</li>
+            <li>Training set</li>
+            <code>
+              cd ./train
+              train_audio_weakly.csv: video-level audio annotaions of training set
+              train_visual_weakly.csv: video-level visual annotaions of training set
+              train_weakly.csv: video-level annotations (union of video-level audio annotations and visual annotations) of training set
+            </code>
+            <li>Validation set</li>
+            <code>
+              cd ./val
+              val_audio_weakly.csv: video-level audio annotaions of validation set
+              val_visual_weakly.csv: video-level visual annotaions of validation set
+              val_weakly_av.csv: video-level annotations (union of video-level audio annotations and visual annotations) of validation set
+              val_audio.csv: event-level audio annotaions of validation set
+              val_visual.csv: event-level visual annotaions of validation set
+            </code>
+            <li>Testing set</li>
+            <code>
+              cd ./test
+              test_audio_weakly.csv: video-level audio annotaions of testing set
+              test_visual_weakly.csv: video-level visual annotaions of testing set
+              test_weakly_av.csv: video-level annotations (union of video-level audio annotations and visual annotations) of testing set
+              test_audio.csv: event-level audio annotaions of testing set
+              test_visual.csv: event-level visual annotaions of testing set
+            </code>
           </ul>
         </p>
         
