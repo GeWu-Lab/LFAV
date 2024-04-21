@@ -75,7 +75,22 @@ src/scripts/test_s3.sh
 
 We also provide our trained weights: [Google Drive](https://drive.google.com/file/d/10v-1WnUhHf-0ehH8yXJ0pSkGDYtKVdPy/view?usp=sharing),  [Baidu Drive](https://pan.baidu.com/s/1-wki3AfPAz3YnzNmGrC0wA?pwd=lfav) (pwd: lfav).
 
-## Acknowledgement
+### Publication(s)
+
+If you find our work useful in your research, please cite our paper.
+
+```
+ @ARTICLE{hou2023towards,
+          title={Towards Long Form Audio-visual Video Understanding},
+          author={Hou, Wenxuan and li, Guangyao and Tian, Yapeng and Hu, Di},
+          journal={arXiv preprint arXiv:2306.09431},
+          year={2023},
+        }
+        
+
+```
+
+### Acknowledgement
 
 The source code referenced [AVVP-ECCV20](https://github.com/YapengTian/AVVP-ECCV20).
 
