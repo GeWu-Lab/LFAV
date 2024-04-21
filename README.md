@@ -73,7 +73,7 @@ The script of testing all three phases is in:
 src/scripts/test_s3.sh
 ```
 
-
+We also provide our trained weights: [Google Drive](https://drive.google.com/file/d/10v-1WnUhHf-0ehH8yXJ0pSkGDYtKVdPy/view?usp=sharing) (pwd: lfav),  [Baidu Drive](https://pan.baidu.com/s/1-wki3AfPAz3YnzNmGrC0wA?pwd=lfav) (pwd: lfav).
 
 ## Acknowledgement
 
