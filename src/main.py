@@ -43,33 +43,33 @@ def main():
     parser.add_argument("--real_av_labels", action='store_true',
                         help="use real audio-visual separate weakly labels or label smoothing")
     # train_label paths
-    parser.add_argument("--weak_label_train_video_level", type=str, default="data_new/train/train_weakly.txt")
-    parser.add_argument("--weak_label_train_audio", type=str, default="data_new/train/train_audio_weakly.txt",
+    parser.add_argument("--weak_label_train_video_level", type=str, default="label_path/train/train_weakly.txt")
+    parser.add_argument("--weak_label_train_audio", type=str, default="label_path/train/train_audio_weakly.txt",
                         help="audio weak train csv file")
-    parser.add_argument("--weak_label_train_visual", type=str, default="data_new/train/train_visual_weakly.txt",
+    parser.add_argument("--weak_label_train_visual", type=str, default="label_path/train/train_visual_weakly.txt",
                         help="visual weak train csv file")
     # val_label_paths
-    parser.add_argument("--weak_label_val_audio", type=str, default="data_new/val/val_audio_weakly.csv",
+    parser.add_argument("--weak_label_val_audio", type=str, default="label_path/val/val_audio_weakly.csv",
                         help="audio weak test csv file")
-    parser.add_argument("--weak_label_val_visual", type=str, default="data_new/val/val_visual_weakly.csv",
+    parser.add_argument("--weak_label_val_visual", type=str, default="label_path/val/val_visual_weakly.csv",
                         help="visual weak test csv file")
-    parser.add_argument("--weak_label_val", type=str, default="data_new/val/val_weak_av.csv",
+    parser.add_argument("--weak_label_val", type=str, default="label_path/val/val_weak_av.csv",
                         help="weak test csv file")
-    parser.add_argument("--label_val_audio", type=str, default="data_new/val/val_audio.csv",
+    parser.add_argument("--label_val_audio", type=str, default="label_path/val/val_audio.csv",
                         help="temporally fine-grained annotated validation csv file for audio")
-    parser.add_argument("--label_val_visual", type=str, default="data_new/val/val_visual.csv",
+    parser.add_argument("--label_val_visual", type=str, default="label_path/val/val_visual.csv",
                         help="temporally fine-grained annotated validation csv file for visual")
 
     # test_label_paths
-    parser.add_argument("--weak_label_test_audio", type=str, default="data_new/test/test_audio_weakly.csv",
+    parser.add_argument("--weak_label_test_audio", type=str, default="label_path/test/test_audio_weakly.csv",
                         help="audio weak test csv file")
-    parser.add_argument("--weak_label_test_visual", type=str, default="data_new/test/test_visual_weakly.csv",
+    parser.add_argument("--weak_label_test_visual", type=str, default="label_path/test/test_visual_weakly.csv",
                         help="visual weak test csv file")
-    parser.add_argument("--weak_label_test", type=str, default="data_new/test/test_weak_av.csv",
+    parser.add_argument("--weak_label_test", type=str, default="label_path/test/test_weak_av.csv",
                         help="weak test csv file")
-    parser.add_argument("--label_test_audio", type=str, default="data_new/test/test_audio.csv",
+    parser.add_argument("--label_test_audio", type=str, default="label_path/test/test_audio.csv",
                         help="temporally fine-grained annotated validation csv file for audio")
-    parser.add_argument("--label_test_visual", type=str, default="data_new/test/test_visual.csv",
+    parser.add_argument("--label_test_visual", type=str, default="label_path/test/test_visual.csv",
                         help="temporally fine-grained annotated validation csv file for visual")
 
     # training settings
