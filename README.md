@@ -57,6 +57,28 @@ test_audio.csv: event-level audio annotaions of testing set
 test_visual.csv: event-level visual annotaions of testing set
 ```
 
+### Train and test
+
+The script of training all three phases is in:
+
+```
+src/scripts/train_s3.sh
+```
+
+If you want to train one or two phases, just edit the arg "num_stages" to 1 or 2.
+
+The script of testing all three phases is in:
+
+```
+src/scripts/test_s3.sh
+```
+
+
+
+## Acknowledgement
+
+The source code referenced [AVVP-ECCV20](https://github.com/YapengTian/AVVP-ECCV20).
+
 ### License
 
 This project is released under the [CC BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/).

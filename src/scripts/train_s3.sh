@@ -26,7 +26,7 @@ python main.py \
         --stg3_lr 2e-4 \
         --step_size 10 \
         --gpu 1 \
-        --num_stages 1 \
+        --num_stages 3 \
         --transformer_dim 512 \
         --transformer_num_heads 8 \
         --num_transformer_layers 6 \
