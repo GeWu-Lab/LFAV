@@ -1,0 +1,52 @@
+# new stage3, use 'add' to do cross modal attention
+
+python main.py \
+        --audio_feature_path "data_path/audio-feat-vggish-align/" \
+        --visual_feature_path "data_path/visual-feat-res18-align/" \
+        --spatio_temporal_visual_feature_path "data_path/visual-feat-r2plus1d-align/" \
+        --weak_label_train_video_level "label_path/train/train_weakly.csv" \
+        --weak_label_train_audio "label_path/train/train_audio_weakly.csv" \
+        --weak_label_train_visual "label_path/train/train_visual_weakly.csv" \
+        --weak_label_val_audio  "label_path/val/val_audio_weakly.csv" \
+        --weak_label_val_visual "label_path/val/val_visual_weakly.csv" \
+        --weak_label_val "label_path/val/val_weak_av.csv" \
+        --label_val_audio "label_path/val/val_audio.csv" \
+        --label_val_visual "label_path/val/val_visual.csv" \
+        --weak_label_test_audio "label_path/test/test_audio_weakly.csv" \
+        --weak_label_test_visual "label_path/test/test_visual_weakly.csv" \
+        --weak_label_test "label_path/test/test_weak_av.csv" \
+        --label_test_audio "label_path/test/test_audio.csv" \
+        --label_test_visual "label_path/test/test_visual.csv" \
+        --model_path "model_ckpt_path/" \
+        --label_format 'video' \
+        --epochs 30 \
+        --batch_size 16 \
+        --stg1_lr 1e-4 \
+        --stg2_lr 1e-4 \
+        --stg3_lr 2e-4 \
+        --step_size 10 \
+        --gpu 2 \
+        --num_stages 3 \
+        --transformer_dim 512 \
+        --transformer_num_heads 8 \
+        --num_transformer_layers 6 \
+        --basic_window_size 2 \
+        --window_shift  \
+        --graph_op_type 'attn' \
+        --gat_edge_threshold 0.5 \
+        --experiment_date 20221101_s3 \
+        --real_av_labels \
+        --stg2_evnet_loss_weight 0 \
+        --el_warm_up_epoch -3 \
+        --extract_sb_th 0.5 \
+        --pool_method 'att' \
+        --event_interaction_op 'mhsa' \
+        --s3_share_fc \
+        --stg3_event_loss_weight 0.3 \
+        --stg3_av_loss_weight 1.0 \
+        --s3_el_warm_up_epoch -6 \
+        --s3_cross_modal \
+        --s3_cm_method 'add' \
+        --s3_mhsa_nhead 4 \
+        --s3_pre_norm \
+        --tensorsummary_name '20221101_s3'
