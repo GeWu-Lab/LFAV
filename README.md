@@ -86,8 +86,6 @@ If you find our work useful in your research, please cite our paper.
           journal={arXiv preprint arXiv:2306.09431},
           year={2023},
         }
-        
-
 ```
 
 ### Acknowledgement
