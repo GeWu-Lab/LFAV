@@ -20,6 +20,8 @@ R(2+1)D-18feature: [Google Drive](https://drive.google.com/file/d/1FfLpS0PLPXNJ2
 
 ### Annotations
 
+Label files are in the folder  `LFAV_dataset`.
+
 #### training set 
 
 ```
@@ -58,6 +60,8 @@ test_visual.csv: event-level visual annotaions of testing set
 ```
 
 ### Train and test
+
+Source code is in the folder  `src`.
 
 The script of training all three phases is in:
 
