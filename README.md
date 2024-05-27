@@ -1,4 +1,4 @@
-# Towards Long Form Audio-visual Video Understanding. 
+# Towards Long Form Audio-visual Video Understanding (ACM TOMM 2024). 
 
 [Project Page](https://gewu-lab.github.io/LFAV/)
 
@@ -84,15 +84,17 @@ We also provide our trained weights of the complete method (three phases): [Goog
 If you find our work useful in your research, please cite our paper.
 
 ```
- @ARTICLE{hou2023towards,
+ @ARTICLE{hou2024towards,
           title={Towards Long Form Audio-visual Video Understanding},
           author={Hou, Wenxuan and li, Guangyao and Tian, Yapeng and Hu, Di},
-          journal={arXiv preprint arXiv:2306.09431},
+          journal={ACM Transactions on Multimedia Computing, Communications and Applications},
           year={2023},
         }
 ```
 
 ### Acknowledgement
+
+This research was supported by National Natural Science Foundation of China (NO.62106272), the Young Elite Scientists Sponsorship Program by CAST (2021QNRC001), and Public Computing Cloud, Renmin University of China.
 
 The source code referenced [AVVP-ECCV20](https://github.com/YapengTian/AVVP-ECCV20).
 
