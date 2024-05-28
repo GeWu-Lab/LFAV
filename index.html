@@ -1407,7 +1407,7 @@ layout: default
     </div>
 
     <div class="col-md centered" style="padding:1rem;">
-      <img src="{{ site.baseurl }}/static/img/stats-figures/main_exp.png" style="width: 100%" class="img-responsive"/> 
+      <img src="{{ site.baseurl }}/static/img/main_exp.png" style="width: 96%" class="img-responsive"/> 
     </div>
 
     <div class="row">
@@ -1429,6 +1429,30 @@ layout: default
            Results are shown in the last three rows of the above Table, 
            which indicate the potential importance of decoupling a long form audio-visual video into multiple uni-modal events with different lengths and modeling their inherent relations in both uni-modal and cross-modal scenarios. 
         </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="subheading">Visualized localization results</h4>
+          <p class="text-muted" style="text-align:left">
+            We provide several visualized spatial grounding results. The heatmap indicates the location of sounding source. 
+            Through the spatial grounding results, the sounding objects are visually captured, which can facilitate the spatial reasoning.</p>
+        <!-- <div class="col-md centered" style="padding:0.2rem; text-align:center; margin-bottom:8px">
+        <img src="{{ site.baseurl }}/static/img/experiments/visualize1.png" style="width: 100%;" class="img-responsive"/> 
+        </div>
+        <p class="text-muted" style="text-align:left">
+          We visualize the event-level localization results in the videos, two examples are shown in the above figure. Compared with the audio-visual video parsing method HAN, our proposed method achieves better localization results.
+           In some situations (<i>e.g.</i>, event <i>guitar</i> in both audio and visual modality of <i>video 01</i>, and event <i>speech</i> in the audio modality of <i>video 02</i>), 
+          HAN tends to localize some sparse and short video clips instead of a long and complete event, which shows that HAN exists some limitations to understanding long-form videos. 
+          The possible reason is that HAN cannot learn long-range dependencies well. 
+        </p>
+        <p class="text-muted" style="text-align:left">
+          We also notice that, although our proposed event-centric method has achieved the best performance among all methods, there still exist some failure cases in the shown examples (red and black boxes in the figure).
+          The multisensory events take huge different lengths and occur in a dynamic long-range scene, which makes multisensory temporal event localization become a very challenging task, 
+          especially with only video-level labels in training. 
+        </p> -->
+
       </div>
     </div>
   
@@ -1763,8 +1787,8 @@ layout: default
   </div>
 </section> 
 
-<section class="bg-light" id="experiment">
-  <div class="container">
+<!-- <section class="bg-light" id="experiment">
+  <div class="container"> -->
 
 <!-- Team -->
 <section class="bg-light" id="team">
