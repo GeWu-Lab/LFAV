@@ -1397,25 +1397,17 @@ layout: default
     <div class="row">
       <div class="col-md-12">
         <p class="text-muted" style="text-align:left">
-          We propose an event-centric framework that contains three phases from snippet prediction, event extraction to event interaction.
-          Firstly, we propose a pyramid multimodal transformer model to capture the events with different temporal lengths, 
-          where the audio and visual snippet features are required to interact with each other within multi-scale temporal windows. 
-          Secondly, we propose to model the video as structured event graphs according to the snippet prediction, 
-          based on which we refine the event-aware snippet-level features and aggregate them into event features. 
-          At last, we study event relations by modeling the influence among multiple aggregated audio and visual events and then refining the event features. 
-          The three phases progressively achieve a comprehensive understanding of video content as well as event relations 
-          and are jointly optimized with video-level event labels in an end-to-end fashion. 
-          We want to highlight that the inherent relations among multiple events are essential for 
-          understanding the temporal structures and dynamic semantic of the long form audio-visual videos,
-          which has not been sufficiently considered in previous event localization works.
-          <b>More details are in the paper <a href="https://arxiv.org/abs/2306.09431">(Arxiv)</a></b>.<br/>  
-            <!-- <a href="{{ site.baseurl }}/static/files/LFAV.pdf">[Paper]</a> and <a href="{{ site.baseurl }}/static/files/LFAV-supp.pdf">[Supplementary]</a></b>.<br/>   -->
+          To validate the superiority of our proposed framework, we choose 16 related methods for comparison, 
+          including weakly supervised temporal action localization methods: STPN, RSKP; 
+          long sequence modeling methods: Longformer, Transformer-LS, ActionFormer, FLatten Transformer; 
+          audio-visual learning methods: AVE, AVSlowFast, HAN, PSP, DHHN, CMPAE, CM-PIE; 
+          video classification methods: SlowFast, MViT, and MeMViT. 
         </p> 
       </div>
     </div>
 
     <div class="col-md centered" style="padding:1rem;">
-      <img src="{{ site.baseurl }}/static/img/stats-figures/method.png" style="width: 100%" class="img-responsive"/> 
+      <img src="{{ site.baseurl }}/static/img/stats-figures/experiments/exp1.png" style="width: 100%" class="img-responsive"/> 
     </div>
 
     <div class="row">
