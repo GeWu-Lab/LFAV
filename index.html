@@ -1407,7 +1407,7 @@ layout: default
     </div>
 
     <div class="col-md centered" style="padding:1rem;">
-      <img src="{{ site.baseurl }}/static/img/stats-figures/experiments/exp1.png" style="width: 100%" class="img-responsive"/> 
+      <img src="{{ site.baseurl }}/static/img/stats-figures/main_exp.png" style="width: 100%" class="img-responsive"/> 
     </div>
 
     <div class="row">
@@ -1422,6 +1422,13 @@ layout: default
           achieve slightly better results on visual mAP, their overall performance still lags obviously behind our proposed method, 
           showing that our proposed event-centric framework can localize both audio and visual events in long form audio-visual videos better. 
         </p> 
+        <p class="text-muted" style="text-align:left">
+          <b>Effectiveness of Three Phases.</b> Our full method consists of three progressive phases. 
+           The performance of the snippet prediction phase has already surpassed most comparison methods, 
+           then the subsequent phases can further improve localization performance. 
+           Results are shown in the last three rows of the above Table, 
+           which indicate the potential importance of decoupling a long form audio-visual video into multiple uni-modal events with different lengths and modeling their inherent relations in both uni-modal and cross-modal scenarios. 
+        </p>
       </div>
     </div>
   
