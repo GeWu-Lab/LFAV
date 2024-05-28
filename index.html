@@ -1324,7 +1324,7 @@ layout: default
 </section>
 
 
-<!-- Benchmark -->
+<!-- method -->
 <section id="method">
   <div class="container">
     
@@ -1380,6 +1380,65 @@ layout: default
   
   </div>
 </section>
+
+
+<!-- experiments -->
+<section id="experiments">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2 class="section-heading text-uppercase">Experiments and Analysis</h2>
+        <!-- <h3 class="section-subheading text-muted">Challenge Details with links to &#9733;NEW&#9733; Codalab Leaderboards</h3> -->
+        <!-- <h3 class="section-subheading text-muted">Task challenges and the proposed event-centric framework</h3> -->
+      </div>
+    </div>
+     
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-muted" style="text-align:left">
+          We propose an event-centric framework that contains three phases from snippet prediction, event extraction to event interaction.
+          Firstly, we propose a pyramid multimodal transformer model to capture the events with different temporal lengths, 
+          where the audio and visual snippet features are required to interact with each other within multi-scale temporal windows. 
+          Secondly, we propose to model the video as structured event graphs according to the snippet prediction, 
+          based on which we refine the event-aware snippet-level features and aggregate them into event features. 
+          At last, we study event relations by modeling the influence among multiple aggregated audio and visual events and then refining the event features. 
+          The three phases progressively achieve a comprehensive understanding of video content as well as event relations 
+          and are jointly optimized with video-level event labels in an end-to-end fashion. 
+          We want to highlight that the inherent relations among multiple events are essential for 
+          understanding the temporal structures and dynamic semantic of the long form audio-visual videos,
+          which has not been sufficiently considered in previous event localization works.
+          <b>More details are in the paper <a href="https://arxiv.org/abs/2306.09431">(Arxiv)</a></b>.<br/>  
+            <!-- <a href="{{ site.baseurl }}/static/files/LFAV.pdf">[Paper]</a> and <a href="{{ site.baseurl }}/static/files/LFAV-supp.pdf">[Supplementary]</a></b>.<br/>   -->
+        </p> 
+      </div>
+    </div>
+
+    <div class="col-md centered" style="padding:1rem;">
+      <img src="{{ site.baseurl }}/static/img/stats-figures/method.png" style="width: 100%" class="img-responsive"/> 
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-muted" style="text-align:left">
+        <b>An illustration of our event-centric framework</b>. <b>Top</b>: In the first phase of snippet prediction, we propose a pyramid
+        multimodal transformer to generate the snippet features as well as their category prediction. <b>Middle left</b>:
+        In the second phase of event extraction, we build an event-aware graph to refine the snippet features and
+        then aggregate the event-aware snippet features into event features. <b>Middle right</b>: In the third phase of
+        event interaction, we model the event relations in both intra-modal and cross-modal scenarios and then
+        refine the event feature by referring to its relation to other events. <b>Bottom left</b> The architecture of temporal
+        attention pooling. It both outputs snippet-level predictions and video-level predictions. The inside attention
+        weights are used to obtain event features in the event extraction phase. <b>right</b>: An equivalent form of
+        window attention in the PMT Layer, shows how the window operates in the first phase. The window splits the
+        feature sequence into several sub-sequences, then these sub-sequences are performed attention operations
+        respectively. Here we show an example of self attention, operation in cross-modal attention is similar.
+        </p> 
+      </div>
+    </div>
+  
+  </div>
+</section>
+
 
     <!-- <div class="row">
       <div class="col-md-12">
