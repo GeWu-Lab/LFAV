@@ -86,7 +86,7 @@ If you find our work useful in your research, please cite our paper.
 ```
  @ARTICLE{hou2024towards,
           title={Towards Long Form Audio-visual Video Understanding},
-          author={Hou, Wenxuan and li, Guangyao and Tian, Yapeng and Hu, Di},
+          author={Hou, Wenxuan and Li, Guangyao and Tian, Yapeng and Hu, Di},
           journal={ACM Transactions on Multimedia Computing, Communications and Applications},
           year={2024},
         }
