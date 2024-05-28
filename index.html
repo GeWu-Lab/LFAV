@@ -1413,17 +1413,14 @@ layout: default
     <div class="row">
       <div class="col-md-12">
         <p class="text-muted" style="text-align:left">
-        <b>An illustration of our event-centric framework</b>. <b>Top</b>: In the first phase of snippet prediction, we propose a pyramid
-        multimodal transformer to generate the snippet features as well as their category prediction. <b>Middle left</b>:
-        In the second phase of event extraction, we build an event-aware graph to refine the snippet features and
-        then aggregate the event-aware snippet features into event features. <b>Middle right</b>: In the third phase of
-        event interaction, we model the event relations in both intra-modal and cross-modal scenarios and then
-        refine the event feature by referring to its relation to other events. <b>Bottom left</b> The architecture of temporal
-        attention pooling. It both outputs snippet-level predictions and video-level predictions. The inside attention
-        weights are used to obtain event features in the event extraction phase. <b>right</b>: An equivalent form of
-        window attention in the PMT Layer, shows how the window operates in the first phase. The window splits the
-        feature sequence into several sub-sequences, then these sub-sequences are performed attention operations
-        respectively. Here we show an example of self attention, operation in cross-modal attention is similar.
+          <b>Comparison to Other Methods.</b> <b>Firstly</b>, temporal action localization and long sequence modeling methods
+          aim to effectively localize action events in untrimmed videos or model long sequences.
+          But they ignore the valuable cooperation among audio and video modality, which is important in achieving more comprehensive video event understanding. 
+          <b>Secondly</b>, although some methods take the audio signal into account, they are consistently worse than our method. 
+          This could be because they mainly aim at understanding trimmed short videos, resulting in limited modeling of long-range dependencies and event interactions.
+          <b>Thirdly</b>, our proposed method outperforms all the comparison ones obviously, although some recent video classification methods
+          achieve slightly better results on visual mAP, their overall performance still lags obviously behind our proposed method, 
+          showing that our proposed event-centric framework can localize both audio and visual events in long form audio-visual videos better. 
         </p> 
       </div>
     </div>
