@@ -94,7 +94,7 @@ If you find our work useful in your research, please cite our paper.
 
 ### Acknowledgement
 
-This research was supported by National Natural Science Foundation of China (NO.62106272), the Young Elite Scientists Sponsorship Program by CAST (2021QNRC001), and Public Computing Cloud, Renmin University of China.
+This research was supported by National Natural Science Foundation of China (NO.62106272),  and Public Computing Cloud, Renmin University of China.
 
 The source code referenced [AVVP-ECCV20](https://github.com/YapengTian/AVVP-ECCV20).
 
