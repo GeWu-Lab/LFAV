@@ -1,6 +1,6 @@
 # Towards Long Form Audio-visual Video Understanding (ACM TOMM 2024). 
 
-[Project Page](https://gewu-lab.github.io/LFAV/)
+[Project Page](https://gewu-lab.github.io/LFAV/)   [Paper](https://dl.acm.org/doi/pdf/10.1145/3672079)
 
 ### Dataset & Features
 
