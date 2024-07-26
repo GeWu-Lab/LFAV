@@ -86,12 +86,13 @@ We also provide our trained weights of the complete method (three phases): [Goog
 If you find our work useful in your research, please cite our paper.
 
 ```
- @ARTICLE{hou2024towards,
-          title={Towards Long Form Audio-visual Video Understanding},
-          author={Hou, Wenxuan and Li, Guangyao and Tian, Yapeng and Hu, Di},
-          journal={ACM Transactions on Multimedia Computing, Communications and Applications},
-          year={2024},
-        }
+@article{hou2023towards,
+  title={Towards Long Form Audio-visual Video Understanding},
+  author={Hou, Wenxuan and Li, Guangyao and Tian, Yapeng and Hu, Di},
+  journal={ACM Transactions on Multimedia Computing, Communications and Applications},
+  year={2023},
+  publisher={ACM New York, NY}
+}
 ```
 
 ### Acknowledgement
