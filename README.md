@@ -14,11 +14,11 @@ The dataset is collected from [YouTube](https://www.youtube.com/), you can find 
 
 We use VGGish to extract audio features, use ResNet18 and R(2+1)D-18 to extract visual features.
 
-VGGish feature: [Google Drive](https://drive.google.com/file/d/1bvTBotLHnPGIeIAkkgMWK7wcWjZ5xbfo/view), [Baidu Drive](https://pan.baidu.com/share/init?surl=nSdhEilGxGFs-7FOgsDoFw) (pwd: lfav), (~662M).
+VGGish feature: [Google Drive](https://drive.google.com/file/d/1bvTBotLHnPGIeIAkkgMWK7wcWjZ5xbfo/view), [Baidu Drive](https://pan.baidu.com/share/init?surl=nSdhEilGxGFs-7FOgsDoFw) (pwd: lfav), (~212M).
 
-ResNet18 feature: [Google Drive](https://drive.google.com/file/d/14p4jgDo-tteeZPzRBbEq1982tT-uxviZ/view), [Baidu Drive](https://pan.baidu.com/s/1GAstblAMXbhlUj_8QD_ONg) (pwd: lfav), (~2.6G).
+ResNet18 feature: [Google Drive](https://drive.google.com/file/d/14p4jgDo-tteeZPzRBbEq1982tT-uxviZ/view), [Baidu Drive](https://pan.baidu.com/s/1GAstblAMXbhlUj_8QD_ONg) (pwd: lfav), (~1.9G).
 
-R(2+1)D-18feature: [Google Drive](https://drive.google.com/file/d/1FfLpS0PLPXNJ28SqqYLb_vBATlUWnDvK/view), [Baidu Drive](https://pan.baidu.com/share/init?surl=-jRD7MQ0RT0lAN5DP40syA) (pwd: lfav), (~2.6G).
+R(2+1)D-18feature: [Google Drive](https://drive.google.com/file/d/1FfLpS0PLPXNJ28SqqYLb_vBATlUWnDvK/view), [Baidu Drive](https://pan.baidu.com/share/init?surl=-jRD7MQ0RT0lAN5DP40syA) (pwd: lfav), (~1.9G).
 
 ### Annotations
 
