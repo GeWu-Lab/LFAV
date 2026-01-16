@@ -8,7 +8,7 @@
 
 #### YouTube ID
 
-The dataset is collected from [YouTube](https://www.youtube.com/), you can find the ID of each video in [annotation files](https://github.com/GeWu-Lab/LFAV/tree/main/LFAV_dataset). 
+The dataset is collected from [YouTube](https://www.youtube.com/), you can find the ID of each video in [annotation files](https://github.com/GeWu-Lab/LFAV/tree/main/LFAV_dataset). Due to data privacy policies, we are currently unable to release the original videos publicly.
 
 #### Features
 
